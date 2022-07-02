@@ -1,0 +1,63 @@
+$montserrat: "Montserrat", sans-serif;
+
+$gold: #FFC633;
+$bluegradient: linear-gradient(270deg, #295C7A -1.04%, #0072B5 100%);
+$textpurp: #24173D;
+$textgray: #5C5C5C;
+$cardgold: #FAC86E;
+$textgold: #F6BF33;
+$backwhite: #E5E5E5;
+
+$wrap: 1920px;
+$container: 1600px;
+$mc: 0 auto;
+
+@mixin flex($jc, $ai) {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+}
+
+
+body {
+    font-family: $montserrat;
+    background: white;
+    font-size: 14px;
+    letter-spacing: 0.05em;;
+}
+
+.wrapper {
+    max-width: $wrap;
+    margin: $mc;
+}
+
+.container {
+    max-width: $container;
+    margin: $mc;
+    padding: 0 15px; 
+}
+
+h3 {
+    font-family: $montserrat;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 60px;
+    text-align: center;
+}
+
+svg {
+    width: 100%;
+    height: 100%;
+}
+
+p {
+    font-family: $montserrat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    color: white;
+    }
+
