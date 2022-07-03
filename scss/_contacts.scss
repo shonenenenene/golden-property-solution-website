@@ -1,0 +1,70 @@
+.contacts {
+    background: url("../img/footer-cover.jpg");
+    height: 400px;
+    margin-top: 130px;
+    .contacts__container {
+        @include flex(center, center);
+        flex-direction: column;
+        h3 {
+            font-family: $montserrat;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 44px;
+            line-height: 54px;
+            text-align: center;
+            color: #FFFFFF;
+            margin-top: 80px;
+        }
+        p {
+            margin-top: 30px;
+            font-family: $montserrat;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 30px;
+            line-height: 37px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+        .contacts-inputs {
+            margin-top: 60px;
+            @include flex(center, center);
+            gap: 20px;
+            input {   
+                background: #FFFFFF;
+                border-radius: 5px;
+                width: 385px;
+                height: 60px;
+                color: $textgray;
+                padding-left: 30px;
+                padding-right: 30px;
+                background: #FFFFFF;
+                border: none;
+                border-radius: 5px;
+                outline: none;
+                font-family: $montserrat;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 24px;
+            }
+            button {
+                padding: 19px 38px;
+                background: $gold;
+                box-shadow: 4px 4px 8px rgba(23, 55, 95, 0.2);
+                border-radius: 5px;
+                font-family: $montserrat;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 22px;
+                text-align: center;
+                text-transform: uppercase;
+                color: $textpurp;
+                transition: 0.3s;
+                &:hover {
+                    background: #f0b039;
+                }
+            }
+        }
+    }
+}

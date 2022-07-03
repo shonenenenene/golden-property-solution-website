@@ -1,0 +1,47 @@
+.footer {
+    background: linear-gradient(to bottom, white 70%, #E6E5EA 30%);
+    margin-top: 50px;
+    .footer__container {
+        .logo-footer {
+            @include flex(center, center);
+                flex-wrap: nowrap;
+                flex-direction: column;
+                padding-bottom: 10px;
+                margin-bottom: 50px;
+                .gps {
+                    font-family: $wrksans;
+                    font-style: normal;
+                    font-weight: 900;
+                    font-size: 80px;
+                    line-height: 95px;
+                    background: linear-gradient(90deg, #2A2D3E 0%, #FFC633 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                    width: 210px;
+                }
+                .gps_bot {
+                    margin-top: -10px;
+                    font-family: $wrksans;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 12.5px;
+                    line-height: 15px;
+                    text-transform: uppercase;
+                    color: $textpurp;
+                }
+        }
+        .bottom {
+            p {
+                font-family: $montserrat;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 17px;
+                text-align: center;
+                color: $textgray;
+                padding: 20px;
+            }
+        }
+    }
+}

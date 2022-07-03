@@ -1,0 +1,71 @@
+.property {
+    margin-top: 45px;
+    h3 {
+        font-family: $montserrat;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 44px;
+        line-height: 60px;
+        text-align: center;
+        color: $textpurp;
+    }
+}
+.property__container {
+    margin-top: 45px;
+    @include flex(center, center);
+    gap: 2px;
+    div {
+        height: 416px;
+        @include flex(flex-end, center);
+        flex-direction: column;
+        flex-wrap: nowrap;
+        h5 {
+            font-family: $montserrat;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 29px;
+            text-align: center;
+            letter-spacing: 0.05em;
+            color: #FFFFFF;
+        }
+        button {
+            padding: 12px 50px;
+            background: #FAC86E;
+            box-shadow: 4px 4px 8px rgba(23, 55, 95, 0.2);
+            border-radius: 30px;
+            font-family: $montserrat;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: center;
+            color: $textpurp;
+            margin: 33px 0 43px 0;
+            transition: 0.3s;
+            &:hover {
+                background: $gold;
+            }
+        }
+    }
+    .property__card1 {
+        background: url(../img/property1.jpg) no-repeat;
+        width: 638px;
+    }
+    .property__card2 {
+        background: url(../img/property2.jpg) no-repeat; 
+        width: 638px;
+    }
+    .property__card3 {
+        background: url(../img/property3.jpg) no-repeat;
+        width: 638px;
+    }
+    .property__card4 {
+        background: url(../img/property4.jpg) no-repeat;
+        width: 958px;
+    }
+    .property__card5 {
+        background: url(../img/property5.jpg) no-repeat;
+        width: 958px;
+    }
+}

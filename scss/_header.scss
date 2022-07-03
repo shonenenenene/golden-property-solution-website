@@ -1,20 +1,22 @@
-.wrapper {
-    background-color: white;
+.header {
+    background: no-repeat url(../img/cover.jpg);
+    background-position-y: bottom;
+
 }
 .header__container {
     .top {
         @include flex(space-between, center);
-        height: 120px;
+        min-height: 120px;
         .top__left {
             @include flex(space-between, center);
             flex-wrap: nowrap;
             max-width: 690px;
             gap: 45px;
             .logo {
-                // margin-right: 20px;
                 @include flex(center, center);
                 flex-wrap: nowrap;
                 flex-direction: column;
+                padding-bottom: 10px;
                 .gps {
                     font-family: $wrksans;
                     font-style: normal;
@@ -28,6 +30,7 @@
                     width: 210px;
                 }
                 .gps_bot {
+                    margin-top: -10px;
                     font-family: $wrksans;
                     font-style: normal;
                     font-weight: 700;
@@ -57,11 +60,12 @@
             position: relative;
             .phone-icon {
             position: absolute;
-            left: -30px;
+            left: -1px;
             width: 20px;
             height: 20px;
             }
             .number {
+                padding-left: 40px;
                 font-family: $montserrat;
                 font-style: normal;
                 font-weight: 600;
@@ -72,7 +76,7 @@
             }
             .call_btn {
                 padding: 10px 20px;
-                background: #FFC633;
+                background: $gold;
                 border-radius: 30px;
                 font-family: "Open Sans", sans-serif;
                 font-style: normal;
@@ -81,8 +85,149 @@
                 line-height: 25px;
                 text-align: center;
                 color: black;
+                transition: 0.3s;
+                &:hover {
+                    background: #ffbc12;
+                }
             }
         }
        
+    }
+    .welcome {
+        height: 740px;
+        @include flex(space-between, center);
+        .welcome__card {
+            @include flex(center, center);
+            flex-direction: column;
+            max-width: 650px;
+            gap: 20px;
+            h2 {
+                font-family: $montserrat;
+                font-style: normal;
+                font-weight: 800;
+                font-size: 67px;
+                line-height: 70px;
+                text-transform: uppercase;
+                color: #FFFFFF;
+            }
+            h4 {
+                font-family: $montserrat;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 28px;
+                line-height: 70px;
+                text-transform: uppercase;
+                color: #FFFFFF;
+            }
+            .ell2 {
+                width: 462px;
+                height: 2px;
+            }
+            h3 {
+                margin-top: 22px;
+                font-family: $montserrat;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 56px;
+                line-height: 60px;
+                color: #FFFFFF;
+            }
+            p {
+                margin-top: 10px;
+                font-family: $montserrat;
+                font-style: normal;
+                font-weight: 200;
+                font-size: 24px;
+                line-height: 33px;
+                color: #FFFFFF;
+                   span {
+                    color: $textgold;
+                    font-weight: 600;
+                }
+            }
+        }
+        .consultation {
+            @include flex(center, center);
+            flex-direction: column;
+            background: $gold;
+            box-shadow: 10px 25px 45px rgba(0, 0, 0, 0.15);
+            backdrop-filter: blur(10px);
+            border-radius: 30px;
+            width: 850px;
+            height: 460px;
+            h2 {
+                font-family: $montserrat;
+                font-style: normal;
+                font-weight: 800;
+                font-size: 87px;
+                line-height: 106px;
+                text-align: center;
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+                color: $textpurp;
+            }
+            h4 {
+                font-family: $montserrat;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 29px;
+                line-height: 42px;
+                text-align: center;
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+                color: $textpurp;
+            }
+            p {
+                margin-top: 20px;
+                font-family: $montserrat;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 24px;
+                text-align: center;
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+                color: #FFFFFF;
+            }
+            .inputs {
+                margin-top: 30px;
+                @include flex(center, center);
+                gap: 20px;
+                input {
+                    width: 385px;
+                    height: 65px;
+                    padding-left: 30px;
+                    padding-right: 30px;
+                    background: #FFFFFF;
+                    border: none;
+                    border-radius: 5px;
+                    outline: none;
+                    font-family: $montserrat;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+            .consult-btn {
+                margin-top: 30px;
+                padding: 22px 38px;
+                background: #24173D;
+                box-shadow: 4px 4px 8px rgba(23, 55, 95, 0.2);
+                border-radius: 43px;
+                font-family: $montserrat;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 22px;
+                text-align: center;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                transition: 0.3s;
+                &:hover {
+                    background: #3c216e;
+                }
+            }
+        }
     }
 }
